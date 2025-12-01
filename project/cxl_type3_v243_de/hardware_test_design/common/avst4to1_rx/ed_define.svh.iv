@@ -1,0 +1,58 @@
+// (C) 2001-2024 Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions and other 
+// software and tools, and its AMPP partner logic functions, and any output 
+// files from any of the foregoing (including device programming or simulation 
+// files), and any associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License Subscription 
+// Agreement, Intel FPGA IP License Agreement, or other applicable 
+// license agreement, including, without limitation, that your use is for the 
+// sole purpose of programming logic devices manufactured by Intel and sold by 
+// Intel or its authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+
+//------------------------------------------------------------
+// Copyright 2023 Intel Corporation.
+//
+// THIS SOFTWARE MAY CONTAIN PREPRODUCTION CODE AND IS PROVIDED BY THE
+// COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+// WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+// MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+// DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+// BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+// WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+// OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+// EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+//------------------------------------------------------------
+//-------------------------------------------------------------------------
+//  Global Defines
+// ------------------------------------------------------------------------
+//
+
+`ifndef ED_DEFINE
+`define ED_DEFINE
+
+
+package ed_define;
+
+
+
+    //# HDL Defines
+    //# =====================
+
+    // `define RNR
+    // `define CXL
+    // `define CXL_ED_SIM
+
+
+
+endpackage
+`endif// `define ED_DEFINE
+
+`ifdef QUESTA_INTEL_OEM
+`pragma questa_oem_00 "S1GUrC2jziQGFCq1WnKTTiX0tux9Ts3LvxtGsW/r0MLQDnFaRrf1Q/z0i6gRM8P1TzNxXCrYkS/oRstnfDdOmiR1jaiEm/CT8OJ+6H5yOCLeA8PwMTSyCePCkUYRFnpclgwBDcHx9Ai+/b/8DDkmsQGlSvaa6lRdhfgq1tufZL1dyzU9cd9kmTu45U8pRDhZbpZT2HQCOPX+oDwpOWMbVBXay6Y5GENn7g1OwAUXrLjpR91UL00SL2AU7raQhpcfAv95A8zOi+wlnt8fk+RuR999uuz9Uy/PDxX+1VbchYsWGCHvPAKZ7Humf+6Omk9IQtDEwGmiPCxuFa51Xi4ZCwHJKv6pzZvu1MlDYj2Ei1sgOTfqIFz98eghFGaHNIctdnWZdDQN4M0EaAXdaGKKXPBzPiroC5Fx9IRS4FhltnQes1Obfq5AnwXbxc19fPUG4vPgUhRnSRXxALY++zar4wJLYEFTtTa0RYvbRfRVjT4lxhhCwXx1cKxqvVUCUPLvPmba9CfktyBMafGIAXECPT0rLMoyLQhtJdeqy1yhwlYCg7Cl+33RJES4fr9Ook4yc8ygN/Hrqndh+YhLR6WZoC1ChVqJFoBOXb7aU3bapHSFS8RXoUYGE5e+5xIFmEpzf9J02tCU/xmqOcms9lDar0G/YxdhOK7rZABZNBa1oVfrhSU5+LDSzdMZg23XMB8A2J0Khneqoo/59LnyVtzcIUZ/sCMeqqEaNAuFU2PrrPzYYwTdjKjKn+XYsT8EBIbdmTnPyqn8HbVhsbUfWEEIQbUnn/scrRLAVhdpGv5HxsksvkTq1fD0NR31FKnRLlu2d8mqpiWh8m5Jy6ExLsWuvXJYv2RStHSyP1Nn4tfSc9kf7JelE69wP5fB9WyIAZ2S4ewsNtuqgFSghVCSN0JHv2TfVLKfOpwT6c69sJVFnMe5RBeNM1dz0cchD5cgj7z+ZHPjAIO6Fv3D7hD2KDHv1ZkodXSpsHerkZHmZ7w4SfC+LUMZBOKHmlEJcIStNKXC"
+`endif
