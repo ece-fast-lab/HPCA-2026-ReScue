@@ -1,0 +1,137 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 320 416)
+	(text "sram_row" (rect 127 0 168 12)(font "SansSerif" (font_size 11)))
+	(text "inst" (rect 8 400 20 412)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "data_a" (rect 0 0 27 12)(font "SansSerif" (font_size 8)))
+		(text "data_a" (rect 4 65 40 76)(font "SansSerif" (font_size 8)))
+		(line (pt 0 76)(pt 102 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "data_b" (rect 0 0 27 12)(font "SansSerif" (font_size 8)))
+		(text "data_b" (rect 4 115 40 126)(font "SansSerif" (font_size 8)))
+		(line (pt 0 126)(pt 102 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "address_a[11..0]" (rect 0 0 64 12)(font "SansSerif" (font_size 8)))
+		(text "address_a[11..0]" (rect 4 165 100 176)(font "SansSerif" (font_size 8)))
+		(line (pt 0 176)(pt 102 176)(line_width 3))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "address_b[11..0]" (rect 0 0 64 12)(font "SansSerif" (font_size 8)))
+		(text "address_b[11..0]" (rect 4 215 100 226)(font "SansSerif" (font_size 8)))
+		(line (pt 0 226)(pt 102 226)(line_width 3))
+	)
+	(port
+		(pt 0 276)
+		(input)
+		(text "wren_a" (rect 0 0 29 12)(font "SansSerif" (font_size 8)))
+		(text "wren_a" (rect 4 265 40 276)(font "SansSerif" (font_size 8)))
+		(line (pt 0 276)(pt 102 276)(line_width 1))
+	)
+	(port
+		(pt 0 326)
+		(input)
+		(text "wren_b" (rect 0 0 29 12)(font "SansSerif" (font_size 8)))
+		(text "wren_b" (rect 4 315 40 326)(font "SansSerif" (font_size 8)))
+		(line (pt 0 326)(pt 102 326)(line_width 1))
+	)
+	(port
+		(pt 0 376)
+		(input)
+		(text "clock" (rect 0 0 20 12)(font "SansSerif" (font_size 8)))
+		(text "clock" (rect 4 365 34 376)(font "SansSerif" (font_size 8)))
+		(line (pt 0 376)(pt 102 376)(line_width 1))
+	)
+	(port
+		(pt 320 76)
+		(output)
+		(text "q_a" (rect 0 0 15 12)(font "SansSerif" (font_size 8)))
+		(text "q_a" (rect 302 65 320 76)(font "SansSerif" (font_size 8)))
+		(line (pt 320 76)(pt 221 76)(line_width 1))
+	)
+	(port
+		(pt 320 126)
+		(output)
+		(text "q_b" (rect 0 0 15 12)(font "SansSerif" (font_size 8)))
+		(text "q_b" (rect 302 115 320 126)(font "SansSerif" (font_size 8)))
+		(line (pt 320 126)(pt 221 126)(line_width 1))
+	)
+	(drawing
+		(text "data_a" (rect 63 46 162 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "datain_a" (rect 107 71 262 152)(font "SansSerif" (color 0 0 0)))
+		(text "q_a" (rect 222 46 462 105)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "dataout_a" (rect 176 71 406 152)(font "SansSerif" (color 0 0 0)))
+		(text "data_b" (rect 63 96 162 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "datain_b" (rect 107 121 262 252)(font "SansSerif" (color 0 0 0)))
+		(text "q_b" (rect 222 96 462 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "dataout_b" (rect 176 121 406 252)(font "SansSerif" (color 0 0 0)))
+		(text "address_a" (rect 41 146 136 305)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "address_a" (rect 107 171 268 352)(font "SansSerif" (color 0 0 0)))
+		(text "address_b" (rect 41 196 136 405)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "address_b" (rect 107 221 268 452)(font "SansSerif" (color 0 0 0)))
+		(text "wren_a" (rect 59 246 154 505)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "wren_a" (rect 107 271 250 552)(font "SansSerif" (color 0 0 0)))
+		(text "wren_b" (rect 59 296 154 605)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "wren_b" (rect 107 321 250 652)(font "SansSerif" (color 0 0 0)))
+		(text "clock" (rect 74 346 178 705)(font "SansSerif" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 107 371 232 752)(font "SansSerif" (color 0 0 0)))
+		(text " sram_row " (rect 277 401 614 812)(font "SansSerif" ))
+		(line (pt 102 34)(pt 221 34)(line_width 1))
+		(line (pt 221 34)(pt 221 401)(line_width 1))
+		(line (pt 102 401)(pt 221 401)(line_width 1))
+		(line (pt 102 34)(pt 102 401)(line_width 1))
+		(line (pt 103 55)(pt 103 80)(line_width 1))
+		(line (pt 104 55)(pt 104 80)(line_width 1))
+		(line (pt 220 55)(pt 220 80)(line_width 1))
+		(line (pt 219 55)(pt 219 80)(line_width 1))
+		(line (pt 103 105)(pt 103 130)(line_width 1))
+		(line (pt 104 105)(pt 104 130)(line_width 1))
+		(line (pt 220 105)(pt 220 130)(line_width 1))
+		(line (pt 219 105)(pt 219 130)(line_width 1))
+		(line (pt 103 155)(pt 103 180)(line_width 1))
+		(line (pt 104 155)(pt 104 180)(line_width 1))
+		(line (pt 103 205)(pt 103 230)(line_width 1))
+		(line (pt 104 205)(pt 104 230)(line_width 1))
+		(line (pt 103 255)(pt 103 280)(line_width 1))
+		(line (pt 104 255)(pt 104 280)(line_width 1))
+		(line (pt 103 305)(pt 103 330)(line_width 1))
+		(line (pt 104 305)(pt 104 330)(line_width 1))
+		(line (pt 103 355)(pt 103 380)(line_width 1))
+		(line (pt 104 355)(pt 104 380)(line_width 1))
+		(line (pt 0 0)(pt 320 0)(line_width 1))
+		(line (pt 320 0)(pt 320 418)(line_width 1))
+		(line (pt 0 418)(pt 320 418)(line_width 1))
+		(line (pt 0 0)(pt 0 418)(line_width 1))
+	)
+)

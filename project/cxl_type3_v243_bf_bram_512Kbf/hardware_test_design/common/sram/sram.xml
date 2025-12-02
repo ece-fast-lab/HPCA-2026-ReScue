@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.06.24.09:33:24"
+ outputDirectory="/research/chihuns2/research/bf_bram_word_v243/type3_example_v243_bf_bram_128Kbf_fifo64/intel_rtile_cxl_top_0_ed/hardware_test_design/common/sram/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGIB027R29A1E2VR3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="data_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_a" direction="input" role="datain_a" width="1" />
+  </interface>
+  <interface name="q_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="q_a" direction="output" role="dataout_a" width="1" />
+  </interface>
+  <interface name="data_b" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_b" direction="input" role="datain_b" width="1" />
+  </interface>
+  <interface name="q_b" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="q_b" direction="output" role="dataout_b" width="1" />
+  </interface>
+  <interface name="address_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="address_a" direction="input" role="address_a" width="17" />
+  </interface>
+  <interface name="address_b" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="address_b" direction="input" role="address_b" width="17" />
+  </interface>
+  <interface name="wren_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="wren_a" direction="input" role="wren_a" width="1" />
+  </interface>
+  <interface name="wren_b" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="wren_b" direction="input" role="wren_b" width="1" />
+  </interface>
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clock" direction="input" role="clk" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="sram" version="1.0" name="sram">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGIB027R29A1E2VR3" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="/research/chihuns2/research/bf_bram_word_v243/type3_example_v243_bf_bram_128Kbf_fifo64/intel_rtile_cxl_top_0_ed/hardware_test_design/common/sram/synth/sram.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/research/chihuns2/research/bf_bram_word_v243/type3_example_v243_bf_bram_128Kbf_fifo64/intel_rtile_cxl_top_0_ed/hardware_test_design/common/sram/synth/sram.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/research/chihuns2/research/bf_bram_word_v243/type3_example_v243_bf_bram_128Kbf_fifo64/intel_rtile_cxl_top_0_ed/hardware_test_design/common/sram.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/research/v24.3/ip/altera/megafunctions/ram_2port/ram_2_port_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="sram">"Generating: sram"</message>
+   <message level="Info" culprit="sram">"Generating: sram_ram_2port_2050_g43k7ja"</message>
+  </messages>
+ </entity>
+ <entity kind="ram_2port" version="20.5.0" name="sram_ram_2port_2050_g43k7ja">
+  <parameter name="GUI_CLKEN_ADDRESS_STALL_A" value="false" />
+  <parameter name="GUI_RDEN_DOUBLE" value="false" />
+  <parameter name="GUI_NBE_A" value="true" />
+  <parameter name="GUI_NUMWORDS_B" value="131072" />
+  <parameter name="GUI_ECC_TRIPLE" value="false" />
+  <parameter name="GUI_MIF_FILENAME" value="" />
+  <parameter name="GUI_NUMWORDS_A" value="131072" />
+  <parameter name="GUI_RAM_BLOCK_TYPE" value="Auto" />
+  <parameter name="GUI_MEMSIZE_WORDS" value="131072" />
+  <parameter name="GUI_CONSTRAINED_DONT_CARE" value="true" />
+  <parameter name="GUI_BLANK_MEMORY" value="0" />
+  <parameter name="GUI_CLKEN_OUTPUT_REG_A" value="false" />
+  <parameter name="GUI_CLKEN_OUTPUT_REG_B" value="false" />
+  <parameter name="GUI_RDW_B_MODE" value="New Data" />
+  <parameter name="GUI_BYTE_ENABLE_B" value="false" />
+  <parameter name="GUI_BYTE_ENABLE_A" value="false" />
+  <parameter name="GUI_BYTE_ENABLE_WIDTH" value="8" />
+  <parameter name="GUI_MODE" value="1" />
+  <parameter name="GUI_CLKEN_READ_OUTPUT_REG" value="false" />
+  <parameter name="GUI_RESOURCE_USAGE" value="64 M20K" />
+  <parameter name="GUI_SCLR_READ_OUTPUT_QB" value="false" />
+  <parameter name="GUI_SCLR_READ_OUTPUT_QA" value="false" />
+  <parameter name="GUI_QA_WIDTH" value="1" />
+  <parameter name="GUI_NBE_B" value="true" />
+  <parameter name="GUI_ECCENCBYPASS" value="false" />
+  <parameter name="GUI_BYTE_WIDTH_B" value="0" />
+  <parameter name="GUI_FORCE_TO_ZERO" value="false" />
+  <parameter name="GUI_BYTE_WIDTH_A" value="0" />
+  <parameter name="GUI_ECC_PIPELINE" value="false" />
+  <parameter name="GUI_OPTIMIZATION_OPTION" value="0" />
+  <parameter name="GUI_WRITE_INPUT_PORTS" value="true" />
+  <parameter name="GUI_LC_IMPLEMENTION_OPTIONS" value="0" />
+  <parameter name="GUI_ECC_DOUBLE" value="false" />
+  <parameter name="GUI_RDADDRESS_WIDTH" value="17" />
+  <parameter name="GUI_ACLR_READ_INPUT_RDADDRESS" value="false" />
+  <parameter name="GUI_MEM_IN_BITS" value="0" />
+  <parameter name="GUI_CLKEN_READ_INPUT_REG" value="false" />
+  <parameter name="GUI_DIFFERENT_CLKENS" value="false" />
+  <parameter name="GUI_QB_WIDTH" value="1" />
+  <parameter name="GUI_FILE_REFERENCE" value="0" />
+  <parameter name="GUI_TBENCH" value="false" />
+  <parameter name="GUI_Q_PORT_MODE" value="2" />
+  <parameter name="GUI_DATA_WIDTH" value="1" />
+  <parameter name="GUI_CLKEN_INPUT_REG_A" value="false" />
+  <parameter name="GUI_CLKEN_ADDRESS_STALL_B" value="false" />
+  <parameter name="GUI_CLOCK_TYPE" value="0" />
+  <parameter name="GUI_CLKEN_INPUT_REG_B" value="false" />
+  <parameter name="DEVICE_FAMILY" value="Agilex 7" />
+  <parameter name="GUI_INIT_SIM_TO_X" value="false" />
+  <parameter name="GUI_CLKEN_WRADDRESSSTALL" value="false" />
+  <parameter name="GUI_INIT_FILE_LAYOUT" value="PORT_B" />
+  <parameter name="GUI_Q_WIDTH" value="1" />
+  <parameter name="GUI_DATAA_WIDTH" value="1" />
+  <parameter name="GUI_CLKEN_WRITE_INPUT_REG" value="false" />
+  <parameter name="GUI_READ_OUTPUT_QB" value="true" />
+  <parameter name="GUI_MEMSIZE_BITS" value="256" />
+  <parameter name="GUI_READ_OUTPUT_QA" value="true" />
+  <parameter name="GUI_WIDTH_ECCSTATUS" value="2" />
+  <parameter name="GUI_TDP_EMULATE" value="false" />
+  <parameter name="GUI_RDEN_SINGLE" value="false" />
+  <parameter name="GUI_PR" value="false" />
+  <parameter name="GUI_READ_INPUT_RDADDRESS" value="true" />
+  <parameter name="GUI_RDW_A_MODE" value="New Data" />
+  <parameter name="GUI_WRADDRESS_WIDTH" value="17" />
+  <parameter name="GUI_CLKEN_RDADDRESSSTALL" value="false" />
+  <parameter name="GUI_MAX_DEPTH" value="Auto" />
+  <parameter name="GUI_ACLR_READ_OUTPUT_QA" value="false" />
+  <parameter name="GUI_ACLR_READ_OUTPUT_QB" value="false" />
+  <parameter name="GUI_COHERENT_READ" value="false" />
+  <parameter name="GUI_VAR_WIDTH" value="false" />
+  <parameter name="GUI_MODULE_NAME" value="altera_syncram" />
+  <parameter name="GUI_WIDTH_ECCENCPARITY" value="8" />
+  <generatedFiles>
+   <file
+       path="/research/chihuns2/research/bf_bram_word_v243/type3_example_v243_bf_bram_128Kbf_fifo64/intel_rtile_cxl_top_0_ed/hardware_test_design/common/sram/ram_2port_2050/synth/sram_ram_2port_2050_g43k7ja.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/research/chihuns2/research/bf_bram_word_v243/type3_example_v243_bf_bram_128Kbf_fifo64/intel_rtile_cxl_top_0_ed/hardware_test_design/common/sram/ram_2port_2050/synth/sram_ram_2port_2050_g43k7ja.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/research/v24.3/ip/altera/megafunctions/ram_2port/ram_2_port_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="sram" as="ram_2port_0" />
+  <messages>
+   <message level="Info" culprit="sram">"Generating: sram_ram_2port_2050_g43k7ja"</message>
+  </messages>
+ </entity>
+</deploy>
