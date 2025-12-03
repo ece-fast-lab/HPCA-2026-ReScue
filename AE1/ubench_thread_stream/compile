@@ -1,0 +1,1 @@
+gcc -O3 -march=native -o mem_benchmark mem_benchmark.c
