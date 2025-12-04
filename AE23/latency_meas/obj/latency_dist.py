@@ -56,11 +56,17 @@ def main():
             writer.writerow([ns_bin, count, proportion])
 
     # 6. Plot the distribution as a bar chart
+    # 6. Plot the distribution as a bar chart
     x_vals = sorted_ns
     y_vals = [time_counts[ns_bin] for ns_bin in x_vals]
 
     plt.figure(figsize=(10, 6))
-    plt.bar(x_vals, y_vals, color='steelblue')
+    plt.bar(x_vals, y_vals)  # color optional
+
+    # Set axis ranges
+    plt.xlim(340, 460)       # x: 340 ~ 460 ns
+    plt.ylim(0, 100000)      # y: 0 ~ 100K
+
     plt.xlabel('Time (ns)')
     plt.ylabel('Count')
     plt.title('Time Distribution (1 ns buckets)')
@@ -69,6 +75,7 @@ def main():
     # 7. Save the plot
     plt.savefig(output_png)
     plt.close()
+
 
 if __name__ == "__main__":
     main()

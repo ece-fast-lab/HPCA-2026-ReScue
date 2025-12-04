@@ -1,2 +1,0 @@
-sudo numactl -N 0 -m 1 ./tester -s 1 -i 2097152 -r 1024 -o out.csv 
-

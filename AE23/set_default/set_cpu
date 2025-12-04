@@ -3,8 +3,8 @@ echo userspace | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 echo " Check Current setspeed"
 sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_setspeed
 
-echo "Set All CPU Freq = 2.0GHz"
-echo 2000000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_setspeed
+echo "Set All CPU Freq = 2.2GHz"
+echo 2200000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_setspeed
 
 echo "Check All CPU Freq"
 sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_setspeed
