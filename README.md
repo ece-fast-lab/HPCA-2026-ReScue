@@ -67,8 +67,8 @@ On the host (connected to the Agilex FPGA board) and programming server:
 ```bash
 git clone https://github.com/ece-fast-lab/HPCA-2026-ReScue.git
 cd HPCA-2026-ReScue
+```
 
-### 3.1 Clone the Repository
-
+### 
 
 
