@@ -69,6 +69,35 @@ git clone https://github.com/ece-fast-lab/HPCA-2026-ReScue.git
 cd HPCA-2026-ReScue
 ```
 
-### 
+### 3.2 Common FPGA Programming Wrapper
+
+Most experiments use a bash script to program the FPGA:
+```bash
+bash program_fpga.sh <bitstream.cdf>
+bash power_cycle.sh
+bash repo/set_default.sh   # if applicable
+```
+
+## 4. Experiments Overview
+
+### 4.1 System Hang & Makeshift (AE1 – Fig. 4)
+
+- Demonstrate that high write intensity + high thread count can trigger system hangs with delayed CXL memory.
+- Validate that limiting the number of in-flight commands (makeshift) removes hangs.
+- See AE1/README.md
+
+### 4.2 Latency Shaping with ReScue-S (AE23 – Figs. 11 & 12)
+
+- Compare latency distributions of Baseline CXL design, eScue-S latency equalizer and ReScue-S latency randomizer.
+- Show that ReScue-S merges two latency groups into a single group and that randomization gives slightly lower average latency than pure equalization.
+- See AE23/README.md
+
+### 4.3 Performance of ReScue-S (AE23 – Fig. 13)
+
+- Measure percentage execution time overhead of ReScue-S: Baseline vs. ReScue-S (equalizer) vs. ReScue-S (randomizer).
+- See AE23/README.md (Section “Performance Experiments (ReScue-S)”)
 
 
+### 4.4 Performance of ReScue-R (AE4 – Fig. 10)
+- Evaluate performance impact of ReScue-R under: Baseline (no repair), ReScue-R without Bloom filter and ReScue-R with Bloom filter (e.g., 512Kb)
+- See AE4/README.md.
