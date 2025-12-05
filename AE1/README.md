@@ -3,7 +3,7 @@
 
 ## `AE1/README.md` (system hang & makeshift – Fig. 4)
 
-```markdown
+
 # AE1 – System Hang Reproduction (Fig. 4)
 
 This directory contains RTL code, scripts and bitstreams to reproduce the **system hang behavior** of an AXI-based CXL memory controller under delayed CXL memory, and to validate the **makeshift solution** that limits the number of in-flight commands.
