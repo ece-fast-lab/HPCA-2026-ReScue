@@ -80,21 +80,7 @@ grep log base_spec_int.lis   # optional quick check
 bash extract_spec_times.sh <baseline_log_file>
 ```
 
-### 4.2 ReScue-R Without Bloom Filter
-
-This configuration evaluates the repair scheme without Bloom filter optimization (e.g., 256K words repair, no BF).
-
-```bash
-cd HPCA-2026-ReScue/AE4/run_spec
-
-bash run_spec_256k_repair_nobf.sh
-
-# After runs finish:
-grep log 256k_repair_nobf_spec_int.lis   # optional check
-bash extract_spec_times.sh <nobf_log_file>
-```
-
-### 4.3 ReScue-R With Bloom Filter
+### 4.2 ReScue-R With Bloom Filter
 
 This configuration enables the Bloom filter (e.g., 512Kb) to reduce metadata traffic and performance impact.
 
@@ -108,10 +94,7 @@ grep log 256k_repair_spec_int.lis   # optional check
 bash extract_spec_times.sh <bf_log_file>
 ```
 
-## 4.4 Expected results
-
-- ReScue-R without Bloom filter:
-Noticeable performance overhead (e.g., ~6% for some SPEC workloads such as gcc), due to more frequent metadata accesses and write amplification.
+## 4.3 Expected results
 
 - ReScue-R with Bloom filter (e.g., 512Kb):
 Significantly reduced overhead (e.g., around ~1% for gcc and <0.2% on average across workloads).
