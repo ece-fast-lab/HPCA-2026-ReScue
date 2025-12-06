@@ -97,4 +97,4 @@ bash extract_spec_times.sh <bf_log_file>
 ## 4.3 Expected results
 
 - ReScue-R with Bloom filter (e.g., 512Kb):
-Significantly reduced overhead (e.g., around ~1% for gcc and <0.2% on average across workloads).
+Significantly reduced overhead (e.g., around ~0.3% for gcc and <0.2% on average across workloads).
