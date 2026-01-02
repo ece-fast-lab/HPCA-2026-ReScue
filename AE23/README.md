@@ -205,7 +205,7 @@ bash set_base.sh
 
 # Run SPEC/GAP under baseline
 cd ../run_spec
-bash set_base.sh   # applies baseline configuration for runs
+bash run_spec_base.sh   # applies baseline configuration for runs
 # Run your SPEC(2017) and GAPBS scripts here, redirected to log
 # After runs finish:
 bash extract_spec_times.sh <log_file_for_baseline>
@@ -219,7 +219,7 @@ cd HPCA-2026-ReScue/AE23/set_default
 bash set_eq.sh
 
 cd ../run_spec
-bash set_eq.sh
+bash run_spec_eq.sh
 # Run SPEC/GAP under equalizer configuration
 bash extract_spec_times.sh <log_file_for_eq>
 
@@ -236,7 +236,7 @@ cd ../set_default
 bash set_rand.sh
 
 cd ../run_spec
-bash set_rand.sh
+bash run_spec_rand.sh
 # Run SPEC/GAP under randomizer configuration
 bash extract_spec_times.sh <log_file_for_rand>
 ```

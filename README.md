@@ -99,5 +99,5 @@ bash repo/set_default.sh   # if applicable
 
 
 ### 4.4 Performance of ReScue-R (AE4 – Fig. 10)
-- Evaluate performance impact of ReScue-R under: Baseline (no repair), ReScue-R without Bloom filter and ReScue-R with Bloom filter (e.g., 512Kb)
+- Evaluate performance impact of ReScue-R under: Baseline (no repair) and ReScue-R with Bloom filter (e.g., 512Kb)
 - See AE4/README.md.
