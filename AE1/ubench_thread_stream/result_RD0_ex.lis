@@ -1,0 +1,49 @@
+RD0 Thread1
+Running streaming benchmark: R/W = 0.00, threads = 1
+Total bandwidth: 1.21 GB/s
+RD0 Thread2
+Running streaming benchmark: R/W = 0.00, threads = 2
+Total bandwidth: 1.21 GB/s
+RD0 Thread3
+Running streaming benchmark: R/W = 0.00, threads = 3
+Total bandwidth: 1.12 GB/s
+RD0 Thread4
+Running streaming benchmark: R/W = 0.00, threads = 4
+Total bandwidth: 1.08 GB/s
+RD0 Thread5
+Running streaming benchmark: R/W = 0.00, threads = 5
+Total bandwidth: 1.04 GB/s
+RD0 Thread6
+Running streaming benchmark: R/W = 0.00, threads = 6
+Total bandwidth: 0.98 GB/s
+RD0 Thread7
+Running streaming benchmark: R/W = 0.00, threads = 7
+Total bandwidth: 0.90 GB/s
+RD0 Thread8
+Running streaming benchmark: R/W = 0.00, threads = 8
+Total bandwidth: 0.81 GB/s
+RD0 Thread9
+Running streaming benchmark: R/W = 0.00, threads = 9
+Total bandwidth: 0.72 GB/s
+RD0 Thread10
+Running streaming benchmark: R/W = 0.00, threads = 10
+Total bandwidth: 0.63 GB/s
+RD0 Thread11
+Running streaming benchmark: R/W = 0.00, threads = 11
+Total bandwidth: 0.57 GB/s
+RD0 Thread12
+Running streaming benchmark: R/W = 0.00, threads = 12
+Total bandwidth: 0.52 GB/s
+RD0 Thread13
+Running streaming benchmark: R/W = 0.00, threads = 13
+Total bandwidth: 0.48 GB/s
+RD0 Thread14
+Running streaming benchmark: R/W = 0.00, threads = 14
+Total bandwidth: 0.45 GB/s
+RD0 Thread15
+Running streaming benchmark: R/W = 0.00, threads = 15
+Total bandwidth: 0.42 GB/s
+RD0 Thread16
+Running streaming benchmark: R/W = 0.00, threads = 16
+Total bandwidth: 0.39 GB/s
+RD0 Thread17
