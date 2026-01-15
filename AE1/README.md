@@ -20,12 +20,12 @@ The resulting behavior corresponds to **Fig. 4** of the HPCA paper.
 - `program_script/`
   - Bitstream archive for delayed CXL design (e.g., `cxl_type3_v233_de_delay_128.zip`).
   - CDF file for programming (e.g., `AE1_v233_128.cdf`).
-  - Helper scripts (e.g., `program_fpga.sh`, `power_cycle.sh`, `pflpath.sh`).
+  - Helper scripts (e.g., `program_fpga.sh`, `power_cycle_remote.sh`, `pflpath.sh`).
 
 - `set_default/`
   - `buf_reader/`: CSR access helper and microbenchmark configuration.
   - `set_default.sh`: sets default AFU configuration.
-  - `set_makeshift.sh`: applies makeshift (limits in-flight commands).
+  - `set_makeshift_v233.sh`: applies makeshift (limits in-flight commands).
 
 - `ubench_thread_stream/`
   - `compile`: builds the microbenchmark.
@@ -61,7 +61,7 @@ bash pflpath.sh AE1_v233_128.cdf
 bash program_fpga.sh AE1_v233_128.cdf
 
 # Power-cycle the board / host so the new AFU is active
-bash power_cycle.sh
+bash power_cycle_remote.sh
 ```
 
 ### 3.2 Build and Configure the Microbenchmark
@@ -120,7 +120,7 @@ After confirming the hang behavior, apply the makeshift configuration:
 
 ```bash
 cd HPCA-2026-ReScue/AE1/set_default
-bash set_makeshift.sh
+bash set_makeshift_v233.sh
 
 cd ../ubench_thread_stream
 
