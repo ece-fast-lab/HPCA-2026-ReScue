@@ -25,7 +25,7 @@ This directory contains bitstreams and scripts to reproduce:
 - `program_script/`
   - Bitstream archives (e.g., `RANDOM.zip`, `RETIMER.zip`).
   - CDF files (e.g., `AE23_EQ.cdf`, `AE23_RAND.cdf`).
-  - Helper scripts: `program_fpga.sh`, `power_cycle_remote.sh`, `pflpath.sh`.
+  - Helper scripts: `program_spr1.sh`, `power_cycle_remote.sh`, `pflpath.sh`.
 
 - `set_default/`
   - `buf_reader/`: helper code for CSR interaction.
@@ -70,14 +70,14 @@ First, program the **equalizer** bitstream (baseline and equalizer share this bi
 cd HPCA-2026-ReScue/AE23/program_script
 
 # Unpack bitstreams if needed
-unzip RANDOM.zip
-unzip RETIMER.zip
+unzip v243_RANDOM_OoO_FIFO64.zip
+unzip v243_RETIMER_OoO_FIFO64.zip
 
 # Set the correct path in the CDF
-bash pflpath.sh AE23_EQ.cdf
+bash pflpath.sh AE23_v243_EQ.cdf
 
 # Program FPGA with EQ/retimer design
-bash program_fpga.sh AE23_EQ.cdf
+bash program_spr1.sh AE23_v243_EQ.cdf
 
 # Power-cycle the board / host
 bash power_cycle_remote.sh
@@ -158,8 +158,8 @@ Reprogram the FPGA with the randomizer bitstream:
 ```bash
 cd HPCA-2026-ReScue/AE23/program_script
 
-bash pflpath.sh AE23_RAND.cdf
-bash program_fpga.sh AE23_RAND.cdf
+bash pflpath.sh AE23_v243_RAND.cdf
+bash program_spr1.sh AE23_v243_RAND.cdf
 bash power_cycle_remote.sh
 ```
 
@@ -196,7 +196,7 @@ These experiments evaluate the percentage execution time overhead of ReScue-S us
 ```bash
 # After programming the EQ bitstream (AE23_EQ.cdf) again, if needed:
 cd HPCA-2026-ReScue/AE23/program_script
-bash program_fpga.sh AE23_EQ.cdf
+bash program_spr1.sh AE23_EQ.cdf
 bash power_cycle_remote.sh
 
 # Configure baseline mode
@@ -231,7 +231,7 @@ bash extract_spec_times.sh <log_file_for_eq>
 
 ```bash
 cd HPCA-2026-ReScue/AE23/program_script
-bash program_fpga.sh AE23_RAND.cdf
+bash program_spr1.sh AE23_RAND.cdf
 bash power_cycle_remote.sh
 
 cd ../set_default
