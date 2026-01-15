@@ -25,7 +25,7 @@ This directory contains bitstreams and scripts to reproduce:
 - `program_script/`
   - Bitstream archives (e.g., `RANDOM.zip`, `RETIMER.zip`).
   - CDF files (e.g., `AE23_EQ.cdf`, `AE23_RAND.cdf`).
-  - Helper scripts: `program_fpga.sh`, `power_cycle.sh`, `pflpath.sh`.
+  - Helper scripts: `program_fpga.sh`, `power_cycle_remote.sh`, `pflpath.sh`.
 
 - `set_default/`
   - `buf_reader/`: helper code for CSR interaction.
@@ -80,7 +80,7 @@ bash pflpath.sh AE23_EQ.cdf
 bash program_fpga.sh AE23_EQ.cdf
 
 # Power-cycle the board / host
-bash power_cycle.sh
+bash power_cycle_remote.sh
 ```
 
 ### 3.2 Build Measurement Program
@@ -160,7 +160,7 @@ cd HPCA-2026-ReScue/AE23/program_script
 
 bash pflpath.sh AE23_RAND.cdf
 bash program_fpga.sh AE23_RAND.cdf
-bash power_cycle.sh
+bash power_cycle_remote.sh
 ```
 
 After the system is back up:
@@ -197,7 +197,7 @@ These experiments evaluate the percentage execution time overhead of ReScue-S us
 # After programming the EQ bitstream (AE23_EQ.cdf) again, if needed:
 cd HPCA-2026-ReScue/AE23/program_script
 bash program_fpga.sh AE23_EQ.cdf
-bash power_cycle.sh
+bash power_cycle_remote.sh
 
 # Configure baseline mode
 cd HPCA-2026-ReScue/AE23/set_default
@@ -208,6 +208,7 @@ cd ../run_spec
 bash run_spec_base.sh   # applies baseline configuration for runs
 # Run your SPEC(2017) and GAPBS scripts here, redirected to log
 # After runs finish:
+grep log base_spec_int.lis
 bash extract_spec_times.sh <log_file_for_baseline>
 ```
 
@@ -221,6 +222,7 @@ bash set_eq.sh
 cd ../run_spec
 bash run_spec_eq.sh
 # Run SPEC/GAP under equalizer configuration
+grep log eq_spec_int.lis
 bash extract_spec_times.sh <log_file_for_eq>
 
 ```
@@ -230,7 +232,7 @@ bash extract_spec_times.sh <log_file_for_eq>
 ```bash
 cd HPCA-2026-ReScue/AE23/program_script
 bash program_fpga.sh AE23_RAND.cdf
-bash power_cycle.sh
+bash power_cycle_remote.sh
 
 cd ../set_default
 bash set_rand.sh
@@ -238,6 +240,7 @@ bash set_rand.sh
 cd ../run_spec
 bash run_spec_rand.sh
 # Run SPEC/GAP under randomizer configuration
+grep log rand_spec_int.lis
 bash extract_spec_times.sh <log_file_for_rand>
 ```
 
