@@ -134,6 +134,19 @@ Expected behavior (with makeshift):
 - No system hang should be observed for any of the tested RD:WR ratios and thread counts.
 - This validates that limiting the number of in-flight commands removes the hang even under heavy-write, many-thread conditions.
 
+### 3.5 Generating Figure 4.
+
+Reproducing heatmap with evaluation result file.
+
+Run the bash sript with result file.
+
+You can sweep RD ratio (e.g., 0.9, 0.8, …)
+
+We provide sample result files to reproduce the figure.
+
+```bash
+bash draw_text_heat.sh result_RD1_ex.lis result_RD0.5_ex.lis result_RD0_ex.lis
+```
 
 ## 4. Note
 
